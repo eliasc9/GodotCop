@@ -36,10 +36,10 @@ func _run_command():
 #TRANSLATION: api-key-llm and api-docs
 
 func _on_git_pressed():
-	var output = []
-	OS.execute("git", ["add", "."], output)
-	OS.execute("git", ["commit", "-m", '"GodotoCop commit"'], output)
+	OS.execute("git", ["add", "."])
+	OS.execute("git", ["commit", "-m", "GodotCop commit"])
 
 
 func _on_code_pressed():
 	pass # Replace with function body.
+	# Other comment
