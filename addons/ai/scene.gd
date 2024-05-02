@@ -34,3 +34,12 @@ func _run_command():
 #AUDIO: api-key and api-docs
 #RUN: api-key-llm and api-docs
 #TRANSLATION: api-key-llm and api-docs
+
+func _on_git_pressed():
+	var output = []
+	OS.execute("git", ["add", "."], output)
+	OS.execute("git", ["commit", "-m", '"GodotoCop commit"'], output)
+
+
+func _on_code_pressed():
+	pass # Replace with function body.

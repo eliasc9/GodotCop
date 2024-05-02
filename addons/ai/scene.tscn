@@ -19,7 +19,7 @@ theme_override_constants/separation = 20
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "GodotCop at your service, bip, bip."
+text = "GodotCop at your service, bip, bip!"
 horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
@@ -43,7 +43,7 @@ alignment = 0
 
 [node name="Code" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Code TODO to current Script"
+text = "Code TODO on current Script"
 alignment = 0
 
 [node name="Audio" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
@@ -68,3 +68,6 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Or write here..."
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Code" to="." method="_on_code_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Git" to="." method="_on_git_pressed"]
