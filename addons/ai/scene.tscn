@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkshaadiapqa5"]
+
+[ext_resource type="Script" path="res://addons/ai/scene.gd" id="1_ht4pe"]
+[ext_resource type="Texture2D" uid="uid://co7ta0wdhuldr" path="res://addons/ai/icon_2.svg" id="2_p6wos"]
+
+[node name="Scene" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_ht4pe")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "GodotCop at your service, bip, bip."
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_p6wos")
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Texture" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Set TEXTURE to current Sprite2D"
+alignment = 0
+
+[node name="Code" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Code TODO to current Script"
+alignment = 0
+
+[node name="Audio" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Find AUDIO to current Stream"
+alignment = 0
+
+[node name="Git" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Run GIT commit command"
+alignment = 0
+
+[node name="Translation" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Review TRANSLATIONS csv"
+alignment = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Or write here..."
