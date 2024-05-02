@@ -20,14 +20,6 @@ var persisted = {
 	translation_generated = "",
 }
 
-func _load_code():
-	print(EditorInterface.get_selection().get_selected_nodes())
-	print(EditorInterface.get_script_editor().get_current_script().source_code)
-
-func _run_command():
-	var output = []
-	OS.execute("CMD.exe", ["/C", "cd %TEMP% && dir"], output)
-
 # TODO: GodotCop base actions
 #TEXTURE: style, prompt, api-key-image and api-docs
 #TODO: api-key-llm and api-docs
@@ -41,5 +33,9 @@ func _on_git_pressed():
 
 
 func _on_code_pressed():
-	pass # Replace with function body.
-	# Other comment
+	#EditorInterface.get_selection().get_selected_nodes()
+	var current_code = EditorInterface.get_script_editor().get_current_script().source_code
+
+	#call chat with current code + prompt
+	
+	#replace current code with salida

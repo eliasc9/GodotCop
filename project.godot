@@ -16,4 +16,4 @@ config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ai/plugin.cfg")
+enabled=PackedStringArray("res://addons/godotcop_ai/plugin.cfg")

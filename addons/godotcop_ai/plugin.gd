@@ -1,7 +1,7 @@
 @tool
 extends EditorPlugin
 
-const MainPanel = preload("res://addons/ai/scene.tscn")
+const MainPanel = preload("res://addons/godotcop_ai/scene.tscn")
 
 var main_panel_instance
 
@@ -39,4 +39,4 @@ func _get_plugin_name():
 
 
 func _get_plugin_icon():
-	return preload("res://addons/ai/icon.svg")
+	return preload("res://addons/godotcop_ai/icon.svg")

@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkshaadiapqa5"]
+[gd_scene load_steps=3 format=3 uid="uid://6bbsjd50tr3n"]
 
 [ext_resource type="Script" path="res://addons/ai/scene.gd" id="1_ht4pe"]
-[ext_resource type="Texture2D" uid="uid://co7ta0wdhuldr" path="res://addons/ai/icon_2.svg" id="2_p6wos"]
+[ext_resource type="Texture2D" uid="uid://co7ta0wdhuldr" path="res://addons/godotcop_ai/icon_2.svg" id="2_p6wos"]
 
 [node name="Scene" type="CenterContainer"]
 anchors_preset = 15
